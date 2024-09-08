@@ -69,7 +69,7 @@ const OurListPackage = () => {
             </div>
 
             {/* Pagination with Next/Previous */}
-            <div className="flex justify-center mt-8 space-x-2">
+            <div className="flex justify-center mt-8 space-x-2 pb-14">
                 <button
                     onClick={prevPage}
                     disabled={currentPage === 1}

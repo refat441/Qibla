@@ -2,7 +2,7 @@ import React from 'react';
 
 const FeaturedCard = () => {
     return (
-        <div className=' mx-[100px] mt-20 h-[501px]'>
+        <div className=' mx-[100px] mt-20 h-[501px] mb-20'>
             <div className='h-[133px]'>
                 <p className='text-[14px] Gothic-A1-bold'>Featured</p>
                 <h1 className='text-[64px] scheherazade-thin leading-[56px] mt-4'>Services for Hajj and Umrah Travel </h1>

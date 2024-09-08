@@ -12,7 +12,7 @@ import QablahJamaah from '../PlaceholderComponents/Cards/QablahJamaah';
 import OurNews from '../PlaceholderComponents/Cards/OurNews';
 import UmrahPackage from '../PlaceholderComponents/Cards/UmrahPackage';
 import Footer from '../PlaceholderComponents/Cards/Footer';
-import AboutFeaturedCard from '../AboutPage/Card/AboutFeaturedCard';
+
 
 const HeaderHomePage = () => {
     return (
@@ -77,9 +77,6 @@ const HeaderHomePage = () => {
 
             {/* footer */}
             <Footer></Footer>
-
-            {/* AboutFeaturedCard  */}
-            <AboutFeaturedCard></AboutFeaturedCard>
         </div>
     );
 };

@@ -3,27 +3,6 @@ import React from 'react';
 const AboutFeaturedCard = () => {
     return (
         <div>
-            {/* <div className=' mt-20 h-[506px]'>
-                <div className="flex">
-                    
-                    <div className="flex-none w-2/6 flex items-center justify-center text-white" style={{ backgroundColor: '#D19B56' }}>
-                        <div className="flex items-center">
-                            <img className='w-5 h-5' src="/img/Main-logo-white.svg" alt="Logo" />
-                            <p className='text-[14px] Gothic-A1-900 pl-2'>About qablah</p>
-                        </div> 
-                        <div> 
-                        </div>
-                        
-                    </div>
-
-
-
-                    <div className="flex-none w-4/6 h-14 ..." style={{ background: 'linear-gradient(to top,  #111111, #A9A9A9'}}>
-                        
-                    </div>
-                </div>
-
-            </div>    */}
             <div className='flex h-[506px] mt-[108px]'>
                 <div className='w-3/9 pt-20'  style={{ backgroundColor: '#D19B56' }}>
                     <div className='mx-12'>
