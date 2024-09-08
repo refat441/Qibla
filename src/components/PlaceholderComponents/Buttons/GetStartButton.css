@@ -1,0 +1,18 @@
+.btn {
+    @apply py-2 px-2 mt-6 rounded;
+  }
+
+  .btnbg{
+    background-color: #D19B56;
+    color: white;
+  }
+  .btnbg:hover {
+    background-color: black;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  .Gothic-A1-700 {
+    font-family: "Gothic A1", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }

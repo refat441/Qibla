@@ -1,0 +1,16 @@
+.gradientBG{
+    border-radius: 8px 8px 0px 0px;
+    background-image: linear-gradient(to bottom, #C0C0C0, #d4c8ba,rgba(201, 156, 97, 0.61), rgba(184, 116, 28, 0.61));
+}
+.goldenText{
+    color: #D19B56;
+}
+.graybroder{
+    border: 1px solid #E5E5E5;
+}
+.lightbg{
+    background-color: white;
+}
+.graybg{
+    background-color: #e3e2e2;
+}

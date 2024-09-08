@@ -1,0 +1,27 @@
+.btnbutton {
+    @apply my-4 mx-3 rounded;
+  }
+  /* margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 10px;
+  } */
+
+  .btnnbg{
+    background-color: #D19B56;
+    color: white;
+    width: 369.33px;
+    height: 48px;
+    border-radius: 8px;
+  }
+  .btnnbg:hover {
+    background-color: black;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  .Gothic-A1-700 {
+    font-family: "Gothic A1", system-ui;
+    font-weight: 700;
+    font-style: normal;
+  }

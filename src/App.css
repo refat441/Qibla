@@ -1,3 +1,6 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;500;600;700&display=swap');
 .App {
   text-align: center;
 }
@@ -35,4 +38,65 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* font */
+.Gothic-A1-thin {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+  color: #5E5E5E
+  
+}
+.Gothic-A1-400 {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.Gothic-A1-600 {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 600;
+  leading-trim: both;
+  font-style: normal;
+  line-height: 14px; 
+  letter-spacing: 2.4px;
+}
+
+.Gothic-A1-bold {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2.8px;
+  line-height: 14px;
+  color: #D19B56
+}
+.Gothic-A1-900 {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 2.8px;
+  line-height: 14px;
+}
+.Gothic-A1-700 {
+  font-family: "Gothic A1", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.scheherazade-thin {
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 56px;
+  letter-spacing: -1px;
+}
+.scheherazade-thin-normal {
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.goldenText{
+  color: #D19B56;
 }
