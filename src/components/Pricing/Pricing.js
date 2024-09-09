@@ -3,6 +3,7 @@ import PricingHeader from './Card/PricingHeader';
 import HaajEconomoyPackage from './Card/HaajEconomoyPackage';
 import TravelPackagePricing from './Card/TravelPackagePricing';
 import UmrahPackage from '../PlaceholderComponents/Cards/UmrahPackage';
+import EssentialGuidePrice from './Card/EssentialGuidePrice';
 
 const Pricing = () => {
     return (
@@ -18,6 +19,9 @@ const Pricing = () => {
 
             {/* UmrahPackage */}
             <UmrahPackage></UmrahPackage>
+
+            {/* EssentialGuidePrice */}
+            <EssentialGuidePrice></EssentialGuidePrice>
         </div>
     );
 };
