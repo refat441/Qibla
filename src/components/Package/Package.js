@@ -5,6 +5,7 @@ import OurListPackage from './Card/OurListPackage';
 import QablahJamaah from '../PlaceholderComponents/Cards/QablahJamaah';
 import Footer from '../PlaceholderComponents/Cards/Footer';
 import TravelPackage from './Card/TravelPackage';
+import QablahJamaahPackage from './Card/QablahJamaahPackage';
 
 const Package = () => (
     <div>
@@ -21,8 +22,8 @@ const Package = () => (
         <TravelPackage></TravelPackage>
 
         {/* QablahJamaah */}
-        <QablahJamaah></QablahJamaah>
-
+        <QablahJamaahPackage></QablahJamaahPackage>
+        
         {/* footer */}
         <Footer></Footer>
     </div>

@@ -5,12 +5,14 @@ import App from './App';
 import AboutPage from './components/AboutPage/AboutPage';
 import HeaderHomePage from './components/Home-page/HeaderHomePage';
 import Package from './components/Package/Package';
+import Pricing from './components/Pricing/Pricing';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "Package",
         element: <Package/> , 
+      },
+      {
+        path: "Pricing",
+        element: <Pricing/> , 
       },
     ]
   },
