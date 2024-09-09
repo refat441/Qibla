@@ -11,9 +11,9 @@ const BestPackageCard = () => {
                         <img className='w-5 h-5  object-cover' src="/img/main-icon.svg" alt="icon" />
                         <p className='text-[14px] Gothic-A1-bold ml-2 mt-0.5'>BEST PACKAGE</p>
                     </div>
-                    <h1 className='text-[64px] scheherazade-thin leading-[56px] mt-4'>Hajj and umrah special offers </h1>
+                    <h1 className=' '>Hajj and umrah special offers </h1>
                     <p className='text-[16px] Gothic-A1-thin mt-8'>Don't miss out on this exclusive opportunity to embark on a hajj & umrah that is truly yours</p>
-                </div>
+                </div> 
 
                 <div className='mt-[40px]'>
                     <div class="grid grid-cols-3 gap-7">
@@ -21,7 +21,7 @@ const BestPackageCard = () => {
                             <div className='w-[393px] h-[267px] gradientBG'></div>
                                 <div className='pl-3'>
                                     <p   className='scheherazade-thin text-[32px] mt-2'>Economy Umrah Package</p>
-                                    <p className='Gothic-A1-thin'>Start From: <span className='goldenText Gothic-A1-700'>$ 2,200</span> (9 days)</p>
+                                       
 
                                     <hr className='w-[370px] mt-3' />
 
