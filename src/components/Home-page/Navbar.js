@@ -63,7 +63,7 @@ const Navbar = () => {
                         <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
                             Blog
                         </a>
-                        <a href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
+                        <a href="Contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
                             Contact Us
                         </a>
                     </div>

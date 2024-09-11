@@ -6,6 +6,7 @@ import AboutPage from './components/AboutPage/AboutPage';
 import HeaderHomePage from './components/Home-page/HeaderHomePage';
 import Package from './components/Package/Package';
 import Pricing from './components/Pricing/Pricing';
+import Contact from './components/Contact/Contact';
 
 import reportWebVitals from './reportWebVitals';
 import {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "Pricing",
         element: <Pricing/> , 
+      },
+      {
+        path: "Contact",
+        element: <Contact/> , 
       },
     ]
   },
