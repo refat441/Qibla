@@ -7,12 +7,14 @@ import HeaderHomePage from './components/Home-page/HeaderHomePage';
 import Package from './components/Package/Package';
 import Pricing from './components/Pricing/Pricing';
 import Contact from './components/Contact/Contact';
+import FAQ from './components/FAQ/FAQ';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 const router = createBrowserRouter([
@@ -39,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "Contact",
         element: <Contact/> , 
+      },
+      {
+        path: "FAQ",
+        element: <FAQ/> , 
       },
     ]
   },
