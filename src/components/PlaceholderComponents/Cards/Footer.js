@@ -1,5 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import LearnMoreBTN from '../Buttons/LearnMoreBTN';
 
 const Footer = () => {
