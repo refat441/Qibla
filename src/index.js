@@ -9,12 +9,14 @@ import Pricing from './components/Pricing/Pricing';
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
 import Testimonial from './components/Testimonial/Testimonial';
+import News from './components/News/News';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 
@@ -51,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "Testimonial",
         element: <Testimonial/> , 
+      },
+      {
+        path: "News",
+        element: <News/> , 
       },
     ]
   },
