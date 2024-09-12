@@ -7,7 +7,10 @@ const QablahJamaah = () => {
             <div className='flex justify-center items-start'>
                 <div className='w-1/2 h-[452px] text-left mt-8 '>
                     <div className=' '>
-                        <p className='text-[14px] Gothic-A1-bold'>Qablah jamaah</p>
+                        <div className='flex items-center'>
+                            <img className='w-5 h-5 object-cover' src="/img/main-icon.svg" alt="Icon" />
+                            <p className='text-[12px] lg:text-[14px] font-bold pl-2 goldenText'>Qablah jamaah</p>
+                        </div>
                         <h1 className='text-[60px]  scheherazade-thin leading-[56px] mt-4'>Hear What Our Travelers Say with their spiritual journey</h1>
                         <p className='text-[16px] Gothic-A1-thin mt-8'>Discover their experiences, reflections, and profound moments that have transformed their lives. Join the countless believers who have found solace and fulfillment through our dedicated support and travel arrangements.</p>
                         <GetStartButton></GetStartButton>
