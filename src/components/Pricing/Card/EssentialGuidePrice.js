@@ -38,7 +38,7 @@ const EssentialGuidePrice = () => {
                     <div className="relative mx-4 sm:mx-8 md:mx-[60px] lg:mx-[100px] pt-16 md:pt-28 z-10">
                         <div className='flex justify-center items-center text-white mb-4'>
                             <img className='w-5 h-5' src="/img/Main-logo-white.svg" alt="Logo" />
-                            <p className='text-[12px] md:text-[14px] Gothic-A1-900 pl-2'>About qablah</p>
+                            <p className='text-[12px] md:text-[14px] Gothic-A1-900 pl-2'>Essential Guide</p>
                         </div>
                         <h1 className='scheherazade-thin text-[36px] sm:text-[48px] md:text-[56px] lg:text-[64px] text-white'>
                             Hajj and Umrah Travel FAQs

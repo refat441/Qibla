@@ -4,6 +4,7 @@ import AboutQublah from './Card/AboutQublah';
 import EssentialGuidePrice from '../Pricing/Card/EssentialGuidePrice';
 import UmrahPackage from '../PlaceholderComponents/Cards/UmrahPackage';
 import LogisticalFAQ from './Card/LogisticalFAQ';
+import Footer from '../PlaceholderComponents/Cards/Footer';
 
 const FAQ = () => {
     return (
@@ -25,6 +26,10 @@ const FAQ = () => {
             {/* LogisticalFAQ */}
             <LogisticalFAQ></LogisticalFAQ>
 
+            {/* footer */}
+            <div className='mt-15'>
+                <Footer></Footer>
+            </div>
         </div>
     );
 };
