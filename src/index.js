@@ -10,13 +10,14 @@ import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
 import Testimonial from './components/Testimonial/Testimonial';
 import News from './components/News/News';
-import Mainpage404 from './components/404/Mainpage404';
+import Error from './components/Error/Error';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 
@@ -61,8 +62,8 @@ const router = createBrowserRouter([
         element: <News/> , 
       },
       {
-        path: "Mainpage404",
-        element: <Mainpage404/> , 
+        path: "Error",
+        element: <Error/> , 
       },
     ]
   },
