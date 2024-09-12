@@ -8,12 +8,14 @@ import Package from './components/Package/Package';
 import Pricing from './components/Pricing/Pricing';
 import Contact from './components/Contact/Contact';
 import FAQ from './components/FAQ/FAQ';
+import Testimonial from './components/Testimonial/Testimonial';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 
@@ -45,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "FAQ",
         element: <FAQ/> , 
+      },
+      {
+        path: "Testimonial",
+        element: <Testimonial/> , 
       },
     ]
   },

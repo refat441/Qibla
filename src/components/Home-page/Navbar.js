@@ -51,7 +51,7 @@ const Navbar = () => {
                         >
                             <span className="cursor-pointer">Page</span>
                             <div className={`${isDropdownOpen ? 'block z-20' : 'hidden'} absolute bg-white text-black mt-1 rounded-lg shadow-lg`}>
-                                <a href="#testimonials" className="block px-4 py-2 hover:bg-gray-200">Testimonials</a>
+                                <a href="Testimonial" className="block px-4 py-2 hover:bg-gray-200">Testimonials</a>
                                 <a href="#team" className="block px-4 py-2 hover:bg-gray-200">Team</a>
                                 <a href="Pricing" className="block px-4 py-2 hover:bg-gray-200">Pricing</a>
                                 <a href="FAQ" className="block px-4 py-2 hover:bg-gray-200">FAQ</a>
