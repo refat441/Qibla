@@ -12,12 +12,14 @@ import Testimonial from './components/Testimonial/Testimonial';
 import News from './components/News/News';
 import Error from './components/Error/Error';
 import ComingSoon from './components/ComingSoon/ComingSoon';
+import Blog from './components/Blog/Blog';
 
 import reportWebVitals from './reportWebVitals';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+
 
 
 
@@ -70,6 +72,10 @@ const router = createBrowserRouter([
       {
         path: "ComingSoon",
         element: <ComingSoon/> , 
+      },
+      {
+        path: "Blog",
+        element: <Blog/> , 
       },
     ]
   },
