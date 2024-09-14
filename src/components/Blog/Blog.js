@@ -1,9 +1,11 @@
 import React from 'react';
+import BlogHeader from './Card/BlogHeader';
 
 const Blog = () => {
     return (
         <div>
-            <p>this is blog</p>
+            {/* header */}
+            <BlogHeader></BlogHeader>
         </div>
     );
 };
