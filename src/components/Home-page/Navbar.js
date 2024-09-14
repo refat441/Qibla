@@ -56,7 +56,7 @@ const Navbar = () => {
                                 <a href="Pricing" className="block px-4 py-2 hover:bg-gray-200">Pricing</a>
                                 <a href="FAQ" className="block px-4 py-2 hover:bg-gray-200">FAQ</a>
                                 <a href="Error" className="block px-4 py-2 hover:bg-gray-200">404</a>
-                                <a href="#coming-soon" className="block px-4 py-2 hover:bg-gray-200">Coming Soon</a>
+                                <a href="ComingSoon" className="block px-4 py-2 hover:bg-gray-200">Coming Soon</a>
                             </div>
                         </div>
 
