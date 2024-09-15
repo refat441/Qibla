@@ -1,0 +1,7 @@
+.footerbg{
+    background-image: url('/public/img/pattern.png');
+    background-size: cover; /* Makes the background cover the entire area */
+    background-position: center; /* Center the image */
+    height: cover;
+    width: 100%;
+}

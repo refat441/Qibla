@@ -1,9 +1,10 @@
 import React from 'react';
 import LearnMoreBTN from '../Buttons/LearnMoreBTN';
+import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className="relative bg-black">
+        <div className="relative footerbg">
             {/* SVG Decoration */}
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +19,7 @@ const Footer = () => {
                 />
             </svg>
 
-            <div className="relative w-full mt-10 h-[828px] text-white z-10">
+            <div className="relative w-full mt-10 h-[781px] text-white z-10">
                 <div className="grid grid-cols-3 gap-4 mx-[140px]">
                     <div className="mt-[85px] w-[293px] text-left">
                         <h1 className="goldenText Gothic-A1-400 text-[20px]">Qibla</h1>
@@ -109,6 +110,10 @@ const Footer = () => {
                     </div>
                 </div>
 
+            </div>
+
+            <div className='bg-[#131313] py-2'>
+                <h1 className='Gothic-A1-700 text-white'>Copyright© 2024 Qibla - All Rights Reserved.</h1>
             </div>
         </div>
 
