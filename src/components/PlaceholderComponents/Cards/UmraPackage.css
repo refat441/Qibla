@@ -1,0 +1,7 @@
+.bgimgs{
+    background-image: url('/public/img/important.jpg');
+    background-size: cover; /* Makes the background cover the entire area */
+    background-position: center; /* Center the image */
+    height: 393px;
+    width: 100%;
+}
