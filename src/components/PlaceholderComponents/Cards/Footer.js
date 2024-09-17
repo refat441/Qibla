@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="relative w-full mt-10 h-[781px] text-white z-10">
                 <div className="grid grid-cols-3 gap-4 mx-[140px]">
                     <div className="mt-[85px] w-[293px] text-left">
-                        <h1 className="goldenText Gothic-A1-400 text-[20px]">Qibla</h1>
+                        <img src="/img/brandGold.png" className='w-[113px] h-[60px]'  alt="brand" />
                         <p className="Gothic-A1-400 mt-6">
                             Reflections on the significance of each ritual, immerse yourself in the richness of this spiritual endeavor and shape it to align perfectly with your intentions and aspirations
                         </p>

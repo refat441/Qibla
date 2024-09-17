@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
 const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(false); // For mobile menu
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false); // For Page dropdown
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -13,23 +13,31 @@ const Navbar = () => {
     };
 
     return (
-        <div className='w-1420px'>
-            <nav className="flex items-center justify-between flex-wrap p-3" style={{ backgroundColor: '#D19B56' }}>
-                <div className="flex items-center flex-shrink-0 text-white ml-24">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="fill-current h-8 w-8 mr-2" width="27" height="27" fill="currentColor" viewBox="0 0 16 16">
-                        <path d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z"/>
-                    </svg>
-                    <span className="font-semibold text-xl tracking-tight ml-1">Qibla</span>
+        <div className="w-full">
+            <nav className="flex items-center justify-between p-3 w-full" style={{ backgroundColor: '#D19B56' }}>
+                {/* Left Section (Logo) */}
+                <div className={`flex items-center flex-shrink-0 text-white ml-6 sm:ml-12 ${isOpen ? 'block' : 'flex'}`}>
+                    <img src="/img/brand.png" className="w-[87px] h-[46px]" alt="brand" />
                 </div>
+
+                {/* Mobile menu toggle button */}
                 <div className="block lg:hidden">
-                    <button 
-                        onClick={toggleMenu}
-                        className="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-black hover:border-white">
-                        <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-                    </button>
+                    {!isOpen && (
+                        <button
+                            onClick={toggleMenu}
+                            className="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-black hover:border-white"
+                        >
+                            <svg className="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <title>Menu</title>
+                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                            </svg>
+                        </button>
+                    )}
                 </div>
-                <div className={`${isOpen ? 'block ' : 'hidden'} w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
-                    <div className="text-sm lg:flex-grow">
+
+                {/* Main navigation links */}
+                <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto w-full`}>
+                    <div className="text-sm flex flex-col lg:flex-row justify-center items-center w-full lg:w-auto">
                         <a href="Home" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
                             Home
                         </a>
@@ -44,13 +52,34 @@ const Navbar = () => {
                         </a>
 
                         {/* Dropdown Menu for Page */}
-                        <div 
-                            className="relative block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7"
-                            onMouseEnter={toggleDropdown}
-                            onMouseLeave={toggleDropdown}
-                        >
-                            <span className="cursor-pointer">Page</span>
-                            <div className={`${isDropdownOpen ? 'block z-20' : 'hidden'} absolute bg-white text-black mt-1 rounded-lg shadow-lg`}>
+                        <div className="relative block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
+                            <button
+                                onClick={toggleDropdown}
+                                className="focus:outline-none flex items-center justify-between w-full lg:w-auto"
+                            >
+                                <span className="cursor-pointer">Page</span>
+                                <svg
+                                    className={`w-5 h-5 ml-2 transition-transform duration-300 ${
+                                        isDropdownOpen ? 'transform rotate-180' : ''
+                                    }`}
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth="2"
+                                        d="M19 9l-7 7-7-7"
+                                    />
+                                </svg>
+                            </button>
+                            <div
+                                className={`transition-all duration-300 ease-in-out overflow-hidden max-h-0 ${
+                                    isDropdownOpen ? 'max-h-[300px]' : 'max-h-0'
+                                } lg:absolute bg-white text-black mt-1 rounded-lg shadow-lg lg:w-40`}
+                            >
                                 <a href="Testimonial" className="block px-4 py-2 hover:bg-gray-200">Testimonials</a>
                                 <a href="#team" className="block px-4 py-2 hover:bg-gray-200">Team</a>
                                 <a href="Pricing" className="block px-4 py-2 hover:bg-gray-200">Pricing</a>
@@ -66,12 +95,23 @@ const Navbar = () => {
                         <a href="Contact" className="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-black mr-7">
                             Contact Us
                         </a>
+
+                        {/* Mobile Button */}
+                        {isOpen && (
+                            <div className="block lg:hidden w-full mt-4">
+                                <button className="w-full sm:w-[120px] md:w-[140px] lg:w-[163px] h-[35px] md:h-[38px] lg:h-[45px] px-4 py-2 rounded-lg bg-white hover:bg-black hover:text-white Gothic-A1-700 font-bold transition-all duration-300 ease-in-out">
+                                    Get A Quote Now
+                                </button>
+                            </div>
+                        )}
                     </div>
-                    <div>
-                        <a href="#" className="inline-block text-sm px-4 py-2 leading-none border rounded text-black border-white hover:border-transparent hover:text-white hover:bg-black mt-4 lg:mt-0 mr-24 bg-white">
-                            <b>Get A Quota Now</b>
-                        </a>
-                    </div>
+                </div>
+
+                {/* Right Section (Button for larger screens) */}
+                <div className="hidden lg:block mt-4 lg:mt-0 lg:mr-6">
+                    <button className="w-full sm:w-[120px] md:w-[140px] lg:w-[163px] h-[35px] md:h-[38px] lg:h-[45px] px-4 py-2 rounded-lg bg-white hover:bg-black hover:text-white Gothic-A1-700 font-bold transition-all duration-300 ease-in-out">
+                        Get A Quote Now
+                    </button>
                 </div>
             </nav>
         </div>
