@@ -1,23 +1,12 @@
 import React from 'react';
 import './HeaderHomePage.css'
 import GetStartButton from '../PlaceholderComponents/Buttons/GetStartButton';
-import AboutQablahCard from '../PlaceholderComponents/Cards/AboutQablahCard';
-import OurServiceCard from '../PlaceholderComponents/Cards/OurServiceCard';
-import FeaturedCard from '../PlaceholderComponents/Cards/FeaturedCard';
-import TravelPackagCard from '../PlaceholderComponents/Cards/TravelPackagCard';
-import BestPackag from '../PlaceholderComponents/Cards/BestPackageCard';
-import BestPackageCard from '../PlaceholderComponents/Cards/BestPackageCard';
-import GalleryQabla from '../PlaceholderComponents/Cards/GalleryQabla';
-import QablahJamaah from '../PlaceholderComponents/Cards/QablahJamaah';
-import OurNews from '../PlaceholderComponents/Cards/OurNews';
-import UmrahPackage from '../PlaceholderComponents/Cards/UmrahPackage';
-import Footer from '../PlaceholderComponents/Cards/Footer';
+
 
 
 const HeaderHomePage = () => {
     return (
-        <div>
-            <div className='WelcomeSectionGradient '>
+        <div className='WelcomeSectionGradient '>
             <div className='flex items-center justify-center text-white'>
                 <div className='mt-20 w-2/5 text-center'>
                     <p className='text-sm'>WELCOME TO QABLA </p>
@@ -46,38 +35,9 @@ const HeaderHomePage = () => {
                 <p className='font-thin text-white'>Luxurious accommodations to expert guidance ensures that your spiritual journey</p>
                 </div>
             </div>
-            </div>
-            
-            {/* About Qablah */}
-            <AboutQablahCard></AboutQablahCard>
-
-            {/* Our Service */}
-            <OurServiceCard></OurServiceCard>
-
-            {/* Featured */}
-            <FeaturedCard></FeaturedCard>
-
-            {/* TravelPackagCard */}
-            <TravelPackagCard></TravelPackagCard>
-
-            {/* BestPackag */}
-            <BestPackageCard></BestPackageCard>
-
-            {/* QablahJamaah */}
-            <QablahJamaah></QablahJamaah>
-            
-            {/* GalleryQabla */}
-            <GalleryQabla></GalleryQabla>
-
-            {/* OurNews */}
-            <OurNews></OurNews>
-
-            {/* UmrahPackage  */}
-            <UmrahPackage></UmrahPackage>
-
-            {/* footer */}
-            <Footer></Footer>
         </div>
+            
+
     );
 };
 

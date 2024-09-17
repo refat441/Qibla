@@ -19,6 +19,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import HomePage from './components/Home-page/HomePage';
 
 
 
@@ -35,7 +36,7 @@ const router = createBrowserRouter([
     children:[
       {
         path: "Home",
-        element: <HeaderHomePage/> ,
+        element: <HomePage/> ,
       },
       {
         path: "About",

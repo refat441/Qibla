@@ -16,13 +16,13 @@ const Navbar = () => {
         <div className="w-full">
             <nav className="flex items-center justify-between p-3 w-full" style={{ backgroundColor: '#D19B56' }}>
                 {/* Left Section (Logo) */}
-                <div className={`flex items-center flex-shrink-0 text-white ml-6 sm:ml-12 ${isOpen ? 'block' : 'flex'}`}>
+                <div className="flex items-center flex-shrink-0 text-white ml-6 sm:ml-12">
                     <img src="/img/brand.png" className="w-[87px] h-[46px]" alt="brand" />
                 </div>
 
-                {/* Mobile menu toggle button */}
-                <div className="block lg:hidden">
-                    {!isOpen && (
+                {/* Mobile menu toggle button (only show when menu is closed) */}
+                {!isOpen && (
+                    <div className="block lg:hidden">
                         <button
                             onClick={toggleMenu}
                             className="flex items-center px-3 py-2 border rounded text-white border-teal-400 hover:text-black hover:border-white"
@@ -32,8 +32,8 @@ const Navbar = () => {
                                 <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
                             </svg>
                         </button>
-                    )}
-                </div>
+                    </div>
+                )}
 
                 {/* Main navigation links */}
                 <div className={`${isOpen ? 'block' : 'hidden'} lg:flex lg:items-center lg:w-auto w-full`}>
@@ -97,13 +97,11 @@ const Navbar = () => {
                         </a>
 
                         {/* Mobile Button */}
-                        {isOpen && (
-                            <div className="block lg:hidden w-full mt-4">
-                                <button className="w-full sm:w-[120px] md:w-[140px] lg:w-[163px] h-[35px] md:h-[38px] lg:h-[45px] px-4 py-2 rounded-lg bg-white hover:bg-black hover:text-white Gothic-A1-700 font-bold transition-all duration-300 ease-in-out">
-                                    Get A Quote Now
-                                </button>
-                            </div>
-                        )}
+                        <div className="block lg:hidden w-full mt-4">
+                            <button className="w-full sm:w-[120px] md:w-[140px] lg:w-[163px] h-[35px] md:h-[38px] lg:h-[45px] px-4 py-2 rounded-lg bg-white hover:bg-black hover:text-white Gothic-A1-700 font-bold transition-all duration-300 ease-in-out">
+                                Get A Quote Now
+                            </button>
+                        </div>
                     </div>
                 </div>
 

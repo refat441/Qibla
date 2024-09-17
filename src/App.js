@@ -1,6 +1,6 @@
 import './App.css';
+import HomePage from './components/Home-page/HomePage';
 import Navbar from './components/Home-page/Navbar';
-import HeaderHomePage from './components/Home-page/HeaderHomePage';
 import { Outlet } from 'react-router-dom';
 
 
@@ -9,6 +9,7 @@ function App() {
     <div className="App">
       <Navbar></Navbar>
       <Outlet></Outlet>
+      <HomePage></HomePage>
     </div>
   );
 }
