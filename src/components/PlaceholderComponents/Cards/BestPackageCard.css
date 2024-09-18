@@ -2,6 +2,12 @@
     border-radius: 8px 8px 0px 0px;
     background-image: linear-gradient(to bottom, #C0C0C0, #d4c8ba,rgba(201, 156, 97, 0.61), rgba(184, 116, 28, 0.61));
 }
+.daynamicimg{
+    background-image: url('/public/img/background.png');
+    background-size: cover; /* Makes the background cover the entire area */
+    width: 100%;
+    height: 100%;
+}
 .goldenText{
     color: #D19B56;
 }

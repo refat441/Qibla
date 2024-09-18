@@ -78,7 +78,8 @@ const Navbar = () => {
                             <div
                                 className={`transition-all duration-300 ease-in-out overflow-hidden max-h-0 ${
                                     isDropdownOpen ? 'max-h-[300px]' : 'max-h-0'
-                                } lg:absolute bg-white text-black mt-1 rounded-lg shadow-lg lg:w-40`}
+                                } lg:absolute bg-white text-black mt-1 rounded-lg shadow-lg 
+                                lg:w-40 z-20`}
                             >
                                 <a href="Testimonial" className="block px-4 py-2 hover:bg-gray-200">Testimonials</a>
                                 <a href="#team" className="block px-4 py-2 hover:bg-gray-200">Team</a>
